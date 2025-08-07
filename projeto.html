@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MotoStore - Sua Moto Está Aqui!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #ff512f, #dd2476);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #ff512f;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #222;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto 80px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            padding: 40px 30px;
+        }
+        .destaques {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .moto-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            width: 270px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .moto-card:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 18px rgba(255,81,47,0.15);
+        }
+        .moto-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .moto-card h3 {
+            margin: 10px 0 5px 0;
+            color: #ff512f;
+        }
+        .moto-card p {
+            color: #444;
+            font-size: 15px;
+        }
+        .botao-contato {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 32px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .botao-contato:hover {
+            background: linear-gradient(90deg, #dd2476, #ff512f);
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 14px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MotoStore</h1>
+        <p>As melhores motos, os melhores preços!</p>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Destaques</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <h2>Destaques da Semana</h2>
+        <div class="destaques">
+            <div class="moto-card">
+                <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&w=400&q=80" alt="Moto Esportiva">
+                <h3>Honda CBR 650R</h3>
+                <p>2023 • 0km<br>R$ 49.900</p>
+            </div>
+            <div class="moto-card">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80" alt="Moto Custom">
+                <h3>Harley-Davidson Iron 883</h3>
+                <p>2022 • 5.000km<br>R$ 62.000</p>
+            </div>
+            <div class="moto-card">
+                <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=400&q=80" alt="Moto Naked">
+                <h3>Yamaha MT-07</h3>
+                <p>2024 • 0km<br>R$ 44.500</p>
+            </div>
+        </div>
+        <a href="mailto:contato@motostore.com" class="botao-contato">Fale Conosco</a>
+    </main>
+    <footer>
+        &copy; 2025 MotoStore - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
